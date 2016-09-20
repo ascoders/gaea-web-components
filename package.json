@@ -1,0 +1,22 @@
+{
+  "name": "gaea-web-components",
+  "version": "0.0.1",
+  "description": "盖亚-网页组件",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ascoders/gaea-web-components.git"
+  },
+  "keywords": [
+    "gaea-web-components"
+  ],
+  "author": "ascoders",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0"
+  }
+}
