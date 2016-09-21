@@ -1,6 +1,5 @@
-import GaeaWebComponents from './gaea-web-components/gaea-web-components.component'
-import {PropsDefine as GaeaWebComponentsPropsDefine} from './gaea-web-components/gaea-web-components.type'
+import Layout from './layout'
+const Components = [Layout] as any
 
-export {GaeaWebComponents, GaeaWebComponentsPropsDefine}
-export default GaeaWebComponents
-                
+export default Components
+export {Components}
