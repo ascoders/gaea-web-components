@@ -1,12 +1,11 @@
 import * as React from 'react'
-import * as module from './module'
+import * as typings from './layout.type'
 
-import {TransmitTransparently} from '../../../common/transmit-transparently/index'
+import {others} from '../../../common/transmit-transparently/index'
 
-@TransmitTransparently()
-export default class LayoutComponent extends React.Component <module.PropsInterface, module.StateInterface> {
-    static defaultProps: module.PropsInterface = new module.Props()
-    public state: module.StateInterface = new module.State()
+export default class LayoutComponent extends React.Component <typings.PropsDefine, typings.StateDefine> {
+    static defaultProps: typings.PropsDefine = new typings.Props()
+    public state: typings.StateDefine = new typings.State()
 
     render() {
         let style: any = {
@@ -35,7 +34,7 @@ export default class LayoutComponent extends React.Component <module.PropsInterf
         }
 
         return (
-            <div {...this.props.others} style={style}>{this.props.children}</div>
+            <div {...others(new typings.Props(), this.props)} style={style}>{this.props.children}</div>
         )
     }
 }

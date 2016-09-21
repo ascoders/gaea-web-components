@@ -1,5 +1,6 @@
-import Layout from './layout'
-const Components = [Layout] as any
+import Layout from './layout/layout.component'
+import Button from '../../web-common/button/index'
+const Components = [Layout, Button] as any
 
 export default Components
 export {Components}

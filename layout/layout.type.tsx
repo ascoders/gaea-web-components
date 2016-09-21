@@ -1,6 +1,6 @@
 import {TransparentlyPropsPropsDefine} from '../../../common/transparently-props/index'
 
-export interface PropsInterface extends TransparentlyPropsPropsDefine {
+export interface PropsDefine extends TransparentlyPropsPropsDefine {
     width?: number
     minWidth?: number
     height?: number
@@ -170,7 +170,7 @@ export class PropsGaea {
     }]
 }
 
-export class Props extends PropsGaea implements PropsInterface {
+export class Props extends PropsGaea implements PropsDefine {
     display = 'flex'
     flexGrow = null as any
     height = null as number
@@ -195,10 +195,10 @@ export class Props extends PropsGaea implements PropsInterface {
     marginBottom = 0
 }
 
-export interface StateInterface {
+export interface StateDefine {
 
 }
 
-export class State implements StateInterface {
+export class State implements StateDefine {
 
 }
