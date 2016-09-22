@@ -1,6 +1,6 @@
 {
   "name": "gaea-web-components",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "盖亚-网页组件",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -14,9 +14,9 @@
   "author": "ascoders",
   "license": "ISC",
   "dependencies": {
-    "nt-web-button": "^1.0.3",
-    "nt-transmit-transparently": "^1.0.5",
-    "nt-transparently-props": "^0.0.3"
+    "nt-web-button": "^1.0.4",
+    "nt-transmit-transparently": "^1.0.6",
+    "nt-transparently-props": "^0.0.4"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0"
