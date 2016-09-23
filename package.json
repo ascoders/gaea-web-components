@@ -1,6 +1,6 @@
 {
   "name": "gaea-web-components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "盖亚-网页组件",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
