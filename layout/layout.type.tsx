@@ -23,6 +23,7 @@ export interface PropsDefine extends TransparentlyPropsPropsDefine {
     marginTop?: number
     marginRight?: number
     marginBottom?: number
+    opacity?: number
 }
 
 export class PropsGaea {
@@ -167,6 +168,15 @@ export class PropsGaea {
         label: '边距',
         editor: 'marginPadding',
         editable: true
+    }, {
+        field: 'opacity',
+        label: '透明度',
+        editor: 'number',
+        number: [{
+            key: '',
+            value: '%'
+        }],
+        editable: true
     }]
 }
 
@@ -193,6 +203,7 @@ export class Props extends PropsGaea implements PropsDefine {
     marginTop = 0
     marginRight = 0
     marginBottom = 0
+    opacity = 1
 }
 
 export interface StateDefine {
