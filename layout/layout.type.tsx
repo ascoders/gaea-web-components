@@ -31,6 +31,11 @@ export class PropsGaea {
     gaeaIcon = 'square-o'
     gaeaUniqueKey = 'gaea-layout'
     gaeaEdit = [{
+        field: null as any,
+        label: '',
+        editor: 'marginPadding',
+        editable: true
+    }, {
         field: 'flexGrow',
         label: 'flex-grow',
         type: 'number',
@@ -163,11 +168,6 @@ export class PropsGaea {
             key: 'wrap-reverse',
             value: 'wrap-reverse'
         }]
-    }, {
-        field: null as any,
-        label: '边距',
-        editor: 'marginPadding',
-        editable: true
     }, {
         field: 'opacity',
         label: '透明度',
