@@ -172,10 +172,19 @@ export class PropsGaea {
         field: 'opacity',
         label: '透明度',
         editor: 'number',
-        number: [{
-            key: '',
-            value: '%'
-        }],
+        number: {
+            units: [{
+                key: '',
+                value: '%'
+            }],
+            currentUnit: '',
+            max: 100,
+            min: 0,
+            step: 1,
+            inputRange: [0, 100],
+            outputRange: [0, 1],
+            slider: true
+        },
         editable: true
     }]
 }

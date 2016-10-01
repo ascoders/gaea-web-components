@@ -30,7 +30,8 @@ export default class LayoutComponent extends React.Component <typings.PropsDefin
             marginLeft: this.props.marginLeft,
             marginTop: this.props.marginTop,
             marginRight: this.props.marginRight,
-            marginBottom: this.props.marginBottom
+            marginBottom: this.props.marginBottom,
+            opacity: this.props.opacity
         }
 
         return (
