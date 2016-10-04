@@ -1,5 +1,7 @@
 import * as React from 'react'
-import * as typings from './layout.type'
+import * as typings from './button.type'
+
+import {Button} from '../../../web-common/button/index'
 
 export default class LayoutComponent extends React.Component <typings.PropsDefine, typings.StateDefine> {
     static defaultProps: typings.PropsDefine = new typings.Props()
@@ -7,7 +9,7 @@ export default class LayoutComponent extends React.Component <typings.PropsDefin
 
     render() {
         return (
-            <div style={this.props.style}>{this.props.children}</div>
+            <Button style={this.props.style}>{this.props.text}</Button>
         )
     }
 }

@@ -2,40 +2,29 @@ import {TransparentlyPropsPropsDefine} from '../../../common/transparently-props
 import {gaeaHelper} from '../../gaea-helper/index'
 
 export interface PropsDefine extends TransparentlyPropsPropsDefine {
-
+    /**
+     * 显示的文字
+     */
+    text?: string
 }
 
 export class PropsGaea {
-    gaeaName = '布局'
+    gaeaName = '按钮'
     gaeaIcon = 'square-o'
-    gaeaUniqueKey = 'gaea-layout'
+    gaeaUniqueKey = 'gaea-button'
     gaeaEdit = [
         '布局',
         gaeaHelper.layoutEditor,
         gaeaHelper.marginPaddingEditor,
         gaeaHelper.widthHeightEditor,
-        gaeaHelper.overflowEditor,
-        '背景',
-        gaeaHelper.backgroundEditor,
         '特效',
         gaeaHelper.opacityEditor
     ]
 }
 
 export class Props extends PropsGaea implements PropsDefine {
-    style = Object.assign(
-        {},
-        gaeaHelper.layout,
-        gaeaHelper.marginPadding,
-        gaeaHelper.opacity,
-        gaeaHelper.widthHeight,
-        gaeaHelper.overflow,
-        gaeaHelper.background,
-        {
-            display: 'flex',
-            backgroundColor: 'white'
-        }
-    )
+    style = Object.assign({}, gaeaHelper.layout, gaeaHelper.marginPadding, gaeaHelper.opacity)
+    text = '按钮'
 }
 
 export interface StateDefine {
