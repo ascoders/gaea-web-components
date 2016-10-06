@@ -2,21 +2,32 @@ import {TransparentlyPropsPropsDefine} from '../../../common/transparently-props
 import {gaeaHelper} from '../../gaea-helper/index'
 
 export interface PropsDefine extends TransparentlyPropsPropsDefine {
-    /**
-     * 显示的文字
-     */
-    text?: string
+    label?: string
+    placeholder?: string
+    defaultValue?: string
 }
 
 export class PropsGaea {
-    gaeaName = '按钮'
+    gaeaName = '输入框'
     gaeaIcon = 'square-o'
-    gaeaUniqueKey = 'gaea-button'
+    gaeaUniqueKey = 'gaea-input'
     gaeaEdit = [
-        '按钮',
+        '输入框',
         {
-            field: 'text',
-            label: '内容',
+            field: 'defaultValue',
+            label: '默认内容',
+            editor: 'text',
+            editable: true
+        },
+        {
+            field: 'label',
+            label: '提示文字',
+            editor: 'text',
+            editable: true
+        },
+        {
+            field: 'placeholder',
+            label: '占位文字',
             editor: 'text',
             editable: true
         },
@@ -37,7 +48,9 @@ export class Props extends PropsGaea implements PropsDefine {
         gaeaHelper.opacity,
         gaeaHelper.widthHeight
     )
-    text = '按钮'
+    label = "请输入内容"
+    placeholder = "占位文字"
+    defaultValue = null as any
 }
 
 export interface StateDefine {

@@ -9,11 +9,11 @@ export interface PropsDefine extends TransparentlyPropsPropsDefine {
 }
 
 export class PropsGaea {
-    gaeaName = '按钮'
+    gaeaName = '文字'
     gaeaIcon = 'square-o'
-    gaeaUniqueKey = 'gaea-button'
+    gaeaUniqueKey = 'gaea-text'
     gaeaEdit = [
-        '按钮',
+        '文字',
         {
             field: 'text',
             label: '内容',
@@ -35,9 +35,12 @@ export class Props extends PropsGaea implements PropsDefine {
         gaeaHelper.layout,
         gaeaHelper.marginPadding,
         gaeaHelper.opacity,
-        gaeaHelper.widthHeight
+        gaeaHelper.widthHeight,
+        {
+            display: 'inline-block'
+        }
     )
-    text = '按钮'
+    text = '文字'
 }
 
 export interface StateDefine {
