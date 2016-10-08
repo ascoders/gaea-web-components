@@ -1,5 +1,6 @@
 import { TransparentlyPropsPropsDefine } from  'nt-transparently-props';
 export interface PropsDefine extends TransparentlyPropsPropsDefine {
+    text?: string;
 }
 export declare class PropsGaea {
     gaeaName: string;
@@ -14,6 +15,7 @@ export declare class PropsGaea {
 }
 export declare class Props extends PropsGaea implements PropsDefine {
     style: any;
+    text: string;
 }
 export interface StateDefine {
 }
