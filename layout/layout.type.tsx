@@ -17,6 +17,8 @@ export class PropsGaea {
         gaeaHelper.overflowEditor,
         '背景',
         gaeaHelper.backgroundEditor,
+        '边框',
+        gaeaHelper.borderEditor,
         '特效',
         gaeaHelper.opacityEditor
     ]
@@ -31,6 +33,7 @@ export class Props extends PropsGaea implements PropsDefine {
         gaeaHelper.widthHeight,
         gaeaHelper.overflow,
         gaeaHelper.background,
+        gaeaHelper.border,
         {
             display: 'flex',
             backgroundColor: 'white'

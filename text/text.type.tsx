@@ -20,6 +20,8 @@ export class PropsGaea {
             editor: 'text',
             editable: true
         },
+        '排版',
+        gaeaHelper.fontEditor,
         '布局',
         gaeaHelper.layoutEditor,
         gaeaHelper.marginPaddingEditor,
@@ -36,6 +38,7 @@ export class Props extends PropsGaea implements PropsDefine {
         gaeaHelper.marginPadding,
         gaeaHelper.opacity,
         gaeaHelper.widthHeight,
+        gaeaHelper.font,
         {
             display: 'inline-block'
         }
