@@ -1,6 +1,6 @@
 {
   "name": "gaea-web-components",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "盖亚-网页组件",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -16,7 +16,7 @@
   "dependencies": {
     "nt-web-button": "^1.0.5",
     "nt-transparently-props": "^0.0.5",
-    "gaea-helper": "^0.0.5",
+    "gaea-helper": "^0.0.6",
     "nt-web-input": "^1.0.6"
   },
   "peerDependencies": {
