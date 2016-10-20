@@ -2,7 +2,7 @@ import {TransparentlyPropsPropsDefine} from '../../../common/transparently-props
 import {gaeaHelper} from '../../gaea-helper/index'
 
 export interface PropsDefine extends TransparentlyPropsPropsDefine {
-
+    onClick?: ()=>void
 }
 
 export class PropsGaea {
@@ -22,6 +22,23 @@ export class PropsGaea {
         '特效',
         gaeaHelper.opacityEditor
     ]
+    gaeaEvent = {
+        types: [{
+            name: '点击',
+            type: 'onClick',
+            selfCallback: true
+        }],
+        events: [{
+            name: '跳转网址',
+            event: 'jumpUrl'
+        }, {
+            name: '回退',
+            event: 'call',
+            call: {
+                functionName: 'back'
+            }
+        }]
+    }
 }
 
 export class Props extends PropsGaea implements PropsDefine {
@@ -39,6 +56,9 @@ export class Props extends PropsGaea implements PropsDefine {
             backgroundColor: 'white'
         }
     )
+
+    onClick = ()=> {
+    }
 }
 
 export interface StateDefine {

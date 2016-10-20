@@ -7,7 +7,8 @@ export default class LayoutComponent extends React.Component <typings.PropsDefin
 
     render() {
         return (
-            <div style={this.props.style}>{this.props.children}</div>
+            <div onClick={this.props.onClick}
+                 style={this.props.style}>{this.props.children}</div>
         )
     }
 }
