@@ -9,6 +9,7 @@ export class PropsGaea {
     gaeaName = '布局'
     gaeaIcon = 'square-o'
     gaeaUniqueKey = 'gaea-layout'
+    canDragIn = true
     gaeaEdit = [
         '布局',
         gaeaHelper.layoutEditor,
@@ -53,7 +54,7 @@ export class Props extends PropsGaea implements PropsDefine {
         gaeaHelper.border,
         {
             display: 'flex',
-            backgroundColor: 'white'
+            backgroundColor: 'transparent'
         }
     )
 
