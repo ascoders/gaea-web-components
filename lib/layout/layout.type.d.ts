@@ -6,6 +6,7 @@ export declare class PropsGaea {
     gaeaName: string;
     gaeaIcon: string;
     gaeaUniqueKey: string;
+    canDragIn: boolean;
     gaeaEdit: (string | {
         field: any;
         label: string;
