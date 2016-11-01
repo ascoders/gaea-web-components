@@ -5,6 +5,7 @@ import Text from './text/text.component'
 import Input from './input/input.component'
 import Image from './image/image.component'
 import Swiper from './swiper/swiper.component'
+import Modal from './modal/modal.component'
 
 const Components = [
     Layout,
@@ -13,7 +14,8 @@ const Components = [
     Text,
     Input,
     Image,
-    Swiper
+    Swiper,
+    Modal
 ] as any
 
 export default Components
