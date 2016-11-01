@@ -1,6 +1,6 @@
 {
   "name": "gaea-web-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "盖亚-网页组件",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -16,10 +16,14 @@
   "dependencies": {
     "nt-web-button": "^1.0.5",
     "nt-transparently-props": "^0.0.5",
-    "gaea-helper": "^1.0.5",
-    "nt-web-input": "^1.0.6"
+    "gaea-helper": "^1.0.6",
+    "nt-transparently-native-props": "^0.0.1",
+    "nt-web-input": "^1.0.6",
+    "nt-web-modal": "^0.0.5",
+    "react-slick": "^0.14.5"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.0.0",
+    "react-native": "*"
   }
 }
