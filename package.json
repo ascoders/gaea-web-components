@@ -1,6 +1,6 @@
 {
   "name": "gaea-web-components",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "盖亚-网页组件",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -23,7 +23,6 @@
     "react-slick": "^0.14.5"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-native": "*"
+    "react": "^0.14.0 || ^15.0.0"
   }
 }

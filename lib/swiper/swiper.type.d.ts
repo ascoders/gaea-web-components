@@ -1,7 +1,7 @@
 import { TransparentlyNativePropsPropsDefine } from  'nt-transparently-native-props';
-import * as ReactNaitve from 'react-native';
+import { CSSProperties } from 'react';
 export interface PropsDefine extends TransparentlyNativePropsPropsDefine {
-    style?: ReactNaitve.ViewStyle;
+    style?: CSSProperties;
     source?: string;
     dots?: boolean;
     autoPlay?: boolean;
