@@ -1,13 +1,14 @@
-import {TransparentlyNativePropsPropsDefine} from '../../../common/transparently-native-props/index'
-import {gaeaHelper} from '../../gaea-helper/index'
+import { TransparentlyNativePropsPropsDefine } from '../../../common/transparently-native-props/index'
+import { gaeaHelper } from '../../gaea-helper/index'
+import { CSSProperties } from 'react'
 
 export interface PropsDefine extends TransparentlyNativePropsPropsDefine {
-    style?: ReactNaitve.ViewStyle
+    style?: CSSProperties
     source?: string
     gaeaPreview?: boolean
 
     show?: boolean
-    onOk?: ()=>void
+    onOk?: () => void
 }
 
 export class PropsGaea {
@@ -50,7 +51,7 @@ export class Props extends PropsGaea implements PropsDefine {
         gaeaHelper.opacity
     )
     show = true
-    onOk = ()=> {
+    onOk = () => {
     }
 }
 
