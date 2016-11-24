@@ -1,6 +1,5 @@
 import {TransparentlyNativePropsPropsDefine} from '../../../common/transparently-native-props/index'
 import {gaeaHelper} from '../../gaea-helper/index'
-import * as ReactNaitve from 'react-native'
 
 export interface PropsDefine extends TransparentlyNativePropsPropsDefine {
     style?: ReactNaitve.ViewStyle
