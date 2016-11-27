@@ -27,17 +27,17 @@ export class PropsGaea {
         gaeaHelper.opacityEditor
     ]
     gaeaEvent = {
-        types: [{
+        triggers: [{
             name: '点击确认',
             type: 'onOk',
             selfCallback: true
         }],
-        events: [{
+        effects: [{
             name: '跳转网址',
-            event: 'jumpUrl'
+            type: 'jumpUrl'
         }, {
             name: '回退',
-            event: 'call',
+            type: 'call',
             call: {
                 functionName: 'back'
             }

@@ -1,8 +1,8 @@
-import {TransparentlyPropsPropsDefine} from '../../../common/transparently-props/index'
-import {gaeaHelper} from '../../gaea-helper/index'
+import { TransparentlyPropsPropsDefine } from '../../../common/transparently-props/index'
+import { gaeaHelper } from '../../gaea-helper/index'
 
 export interface PropsDefine extends TransparentlyPropsPropsDefine {
-    onClick?: ()=>void
+    onClick?: () => void
 }
 
 export class PropsGaea {
@@ -26,17 +26,17 @@ export class PropsGaea {
         gaeaHelper.opacityEditor
     ]
     gaeaEvent = {
-        types: [{
+        triggers: [{
             name: '点击',
             type: 'onClick',
             selfCallback: true
         }],
-        events: [{
+        effects: [{
             name: '跳转网址',
-            event: 'jumpUrl'
+            type: 'jumpUrl'
         }, {
             name: '回退',
-            event: 'call',
+            type: 'call',
             call: {
                 functionName: 'back'
             }
@@ -61,7 +61,7 @@ export class Props extends PropsGaea implements PropsDefine {
         }
     )
 
-    onClick = ()=> {
+    onClick = () => {
     }
 }
 
