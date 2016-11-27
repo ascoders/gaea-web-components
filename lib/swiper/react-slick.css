@@ -1,0 +1,74 @@
+.nt-editor-gaea-web-components-swiper .slick-list, .nt-editor-gaea-web-components-swiper .slick-slider, .nt-editor-gaea-web-components-swiper .slick-track {
+  position: relative;
+  display: block; }
+
+.nt-editor-gaea-web-components-swiper .slick-loading .slick-slide, .nt-editor-gaea-web-components-swiper .slick-loading .slick-track {
+  visibility: hidden; }
+
+.nt-editor-gaea-web-components-swiper .slick-slider {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.nt-editor-gaea-web-components-swiper .slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.nt-editor-gaea-web-components-swiper .slick-list:focus {
+  outline: 0; }
+
+.nt-editor-gaea-web-components-swiper .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.nt-editor-gaea-web-components-swiper .slick-slider .slick-list, .nt-editor-gaea-web-components-swiper .slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.nt-editor-gaea-web-components-swiper .slick-track {
+  top: 0;
+  left: 0; }
+
+.nt-editor-gaea-web-components-swiper .slick-track:after, .nt-editor-gaea-web-components-swiper .slick-track:before {
+  display: table;
+  content: ''; }
+
+.nt-editor-gaea-web-components-swiper .slick-track:after {
+  clear: both; }
+
+.nt-editor-gaea-web-components-swiper .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+.nt-editor-gaea-web-components-swiper [dir=rtl] .slick-slide {
+  float: right; }
+
+.nt-editor-gaea-web-components-swiper .slick-slide img {
+  display: block; }
+
+.nt-editor-gaea-web-components-swiper .slick-slide.slick-loading img {
+  display: none; }
+
+.nt-editor-gaea-web-components-swiper .slick-slide.dragging img {
+  pointer-events: none; }
+
+.nt-editor-gaea-web-components-swiper .slick-initialized .slick-slide {
+  display: block; }
+
+.nt-editor-gaea-web-components-swiper .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.nt-editor-gaea-web-components-swiper .slick-arrow.slick-hidden {
+  display: none; }
