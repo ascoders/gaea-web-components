@@ -1,4 +1,4 @@
-import {gaeaHelper} from '../../gaea-helper/index'
+import {gaeaHelper} from 'gaea-helper'
 import * as Layout from '../layout/layout.type'
 
 export interface PropsDefine extends Layout.PropsDefine {
