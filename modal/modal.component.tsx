@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as typings from './modal.type'
-import Modal from '../../../web-common/modal/index'
+import Modal from 'nt-web-modal'
 
 import './modal.scss'
 

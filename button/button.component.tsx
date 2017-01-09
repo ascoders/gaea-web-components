@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as typings from './button.type'
 
-import {Button} from '../../../web-common/button/index'
+import {Button} from 'nt-web-button'
 
 export default class LayoutComponent extends React.Component <typings.PropsDefine, typings.StateDefine> {
     static defaultProps: typings.PropsDefine = new typings.Props()
