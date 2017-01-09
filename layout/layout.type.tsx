@@ -1,5 +1,5 @@
-import { TransparentlyPropsPropsDefine } from 'nt-transparently-props'
-import { gaeaHelper } from 'gaea-helper'
+import { TransparentlyPropsPropsDefine } from '../../../common/transparently-props/index'
+import { gaeaHelper } from '../../gaea-helper/index'
 
 export interface PropsDefine extends TransparentlyPropsPropsDefine {
     onClick?: () => void

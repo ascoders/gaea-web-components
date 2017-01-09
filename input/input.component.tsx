@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as typings from './input.type'
 
-import {Input} from 'nt-web-input'
+import {Input} from '../../../web-common/input/index'
 
 export default class InputComponent extends React.Component <typings.PropsDefine, typings.StateDefine> {
     static defaultProps: typings.PropsDefine = new typings.Props()

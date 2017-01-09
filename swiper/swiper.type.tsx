@@ -1,6 +1,6 @@
-import { TransparentlyNativePropsPropsDefine } from 'nt-transparently-native-props'
+import { TransparentlyNativePropsPropsDefine } from '../../../common/transparently-native-props/index'
 import { CSSProperties } from 'react'
-import { gaeaHelper } from 'gaea-helper'
+import { gaeaHelper } from '../../gaea-helper/index'
 
 export interface PropsDefine extends TransparentlyNativePropsPropsDefine {
     style?: CSSProperties
