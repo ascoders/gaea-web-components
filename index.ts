@@ -6,6 +6,7 @@ import Input from './input/input.component'
 import Image from './image/image.component'
 import Swiper from './swiper/swiper.component'
 import Modal from './modal/modal.component'
+import Tab from './tab/tab.component'
 
 const Components = [
     Layout,
@@ -15,7 +16,8 @@ const Components = [
     Input,
     Image,
     Swiper,
-    Modal
+    Modal,
+    Tab
 ] as any
 
 export default Components

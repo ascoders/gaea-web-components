@@ -1,0 +1,35 @@
+.tab{
+    min-width: 100x;
+    min-height: 100px;
+    padding-bottom: 20px
+}
+.tab-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.tab-header-item{
+    display: flex;
+    height: 35px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tab-header-item.active{
+    background-color: #f3f3f3
+}
+
+.tab-content .active{
+    display: block
+}
+
+.tab-content-item{
+    display: none
+}
+.tab-content-item.active{
+    display: block
+}
